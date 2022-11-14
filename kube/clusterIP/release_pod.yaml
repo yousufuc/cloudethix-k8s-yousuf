@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: release-nginx
+  labels:
+    env: release-nginx
+spec:
+  containers:
+  - name: nginx
+    image: yousufquraishi/cloudethix_release_nginx_yousuf:v1
+    ports:
+    - containerPort: 80
